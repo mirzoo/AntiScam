@@ -1,0 +1,76 @@
+.main
+    &-wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
+        padding: 150px 16px
+        padding-bottom: 0
+    &-text
+        display: flex
+        flex-direction: column
+        text-align: left
+        &__title
+            font-style: normal
+            font-weight: 700
+            font-size: 60px
+            line-height: 64px
+            max-width: 650px
+            color: #FFFFFF
+        &__button
+            margin-top: 55px
+            width: 100%
+    &-content
+        margin: 0
+        padding: 0
+        z-index: -1
+        width: 365px
+        height: 500px
+        &__img
+            width: 100%
+            opacity: 65%
+
+
+@media (max-width: 1024px)
+    .main
+        &-text
+            &__title
+                max-width: 390px
+                font-size: 50px
+        &-content
+            width: 445px
+            h600
+
+
+@media (max-width: 768px)
+    .main
+        &-wrap
+            flex-direction: column
+            text-align: center
+        &-text
+            z-index: 2
+            text-align: center
+            &__title
+                max-width: 700px
+                font-size: 70px
+            &__button
+                display: none
+        &-content
+            order: -1
+            height: 600px
+
+@media (max-width: 425px)
+    .main
+      &-text
+        margin-top: 0px
+        &__title
+            width: 320px
+            font-size: 40px
+            line-height: 50px
+      &-content
+        width: 288px
+        height: 380px
+
+
+
+

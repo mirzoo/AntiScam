@@ -1,0 +1,51 @@
+.features
+    padding: 0 16px
+    &-wrap
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        background-color: #313141
+        border-radius: 22px
+        padding: 60px 16px
+        margin-bottom: 32px
+    &-item
+        max-width: 300px
+        padding: 16px
+        &__title
+            display: flex
+            align-items: center
+            font-size: 24px
+            font-weight: 600
+            color: #85BD78
+            img
+                margin-right: 16px
+        &__subtitle
+            font-size: 18px
+            display: block
+            margin-top: 16px
+            margin-left: 42px
+            color: #ffffff
+
+
+
+@media (max-width: 1024px)
+    .features
+        &-wrap
+            margin-top: px
+
+@media (max-width: 768px)
+    .features
+        &-wrap
+            flex-direction: column
+            align-items: center
+            margin-top: 32px
+        &-item
+            margin-bottom: 32px
+
+
+@media (max-width: 425px)
+    .features
+        &-item
+            margin-bottom: 32px
+            &__title
+                font-size: 22px
